@@ -1,0 +1,8 @@
+# .htaccess to redirect all requests in the setting folder to index.html
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Redirect all requests to index.html in the setting folder
+    RewriteCond %{REQUEST_URI} ^/setting/.*$ [NC]
+    RewriteRule ^(.*)$ /setting/index.html [L,R=301]
+</IfModule>

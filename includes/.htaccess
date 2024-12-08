@@ -1,0 +1,8 @@
+# .htaccess to redirect all requests in the includes folder to index.html
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Redirect all requests to index.html in the includes folder
+    RewriteCond %{REQUEST_URI} ^/includes/.*$ [NC]
+    RewriteRule ^(.*)$ /includes/index.html [L,R=301]
+</IfModule>

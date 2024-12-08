@@ -1,0 +1,8 @@
+# .htaccess to redirect all requests in the process folder to index.html
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Redirect all requests to index.html in the process folder
+    RewriteCond %{REQUEST_URI} ^/process/.*$ [NC]
+    RewriteRule ^(.*)$ /process/index.html [L,R=301]
+</IfModule>

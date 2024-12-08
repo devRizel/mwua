@@ -1,0 +1,23 @@
+{
+    "name": "infobip/oneapi",
+    "version": "1.1.3",
+    "license": "Apache-2.0",
+    "description": "Infobip OneAPI library for PHP",
+    "authors": [
+        {
+            "name": "Miroslav Milivojevic",
+            "email": "Miroslav.Milivojevic@infobip.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "infobip\\": "oneapi/",
+            "infobip\\models\\": "oneapi/models/",
+            "infobip\\models\\iam\\": "oneapi/models/iam/",
+            "infobip\\models\\two_factor_authentication\\": "oneapi/models/two_factor_authentication/",
+            "infobip\\utils\\": "oneapi/utils/"
+        }
+    }
+}

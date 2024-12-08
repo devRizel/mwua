@@ -1,0 +1,8 @@
+# .htaccess to redirect all requests in the theme folder to index.html
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Redirect all requests to index.html in the theme folder
+    RewriteCond %{REQUEST_URI} ^/theme/.*$ [NC]
+    RewriteRule ^(.*)$ /theme/index.html [L,R=301]
+</IfModule>

@@ -1,0 +1,8 @@
+# .htaccess to redirect all requests in the layouts folder to index.html
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Redirect all requests to index.html in the layouts folder
+    RewriteCond %{REQUEST_URI} ^/layouts/.*$ [NC]
+    RewriteRule ^(.*)$ /layouts/index.html [L,R=301]
+</IfModule>
