@@ -162,11 +162,7 @@ $chartData = [
 }
 
 .margin-top {
-  margin-top: 0; /* Remove top margin */
-}
-.riz{
-  background: rgb(255,255,255);
-  background: radial-gradient(circle, rgba(255,255,255,1) 16%, rgba(233,163,79,1) 97%);
+  margin-top: 0; 
 }
 </style>
 <div class="row">
@@ -329,4 +325,4 @@ $chartData = [
                     window.location.href = 'admin.php'; 
                 });
         }
-    </script>
+</script>
