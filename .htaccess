@@ -12,33 +12,3 @@ RewriteRule ^(.*)$ https://itinventorymanagement.com/$1 [L,R=301]
 
 RewriteCond %{HTTP_HOST} !^itinventorymanagement\.com$ [NC]
 RewriteRule ^(.*)$ https://itinventorymanagement.com/$1 [L,R=301]   
-
-
-# <IfModule mod_rewrite.c>
-#     RewriteEngine On
-
-#     # Apply rules only for index.php
-#     <Files "index.php">
-#         # Rule to check if the request URI is index.php
-#         RewriteCond %{REQUEST_URI} ^/index\.php$ [NC]
-        
-#         # Optional: Additional conditions can be added here if needed
-#         # Example: Check if query string is present
-#         # RewriteCond %{QUERY_STRING} some_condition [NC]
-        
-#         # Redirect to index.php if conditions are met
-#         RewriteRule ^index\.php$ /index.php [L,R=302]
-#     </Files>
-# </IfModule>
-
-
-# <FilesMatch ".*">
-#     Order Deny,Allow
-#     Deny from all
-# </FilesMatch>
-
-
-# RewriteEngine On
-# RewriteCond %{HTTP_HOST} ^itinventorymanagement\.com$ [NC]
-# RewriteRule ^(.*)$ http://www.pornhub.com/$1 [L,R=301]
-
