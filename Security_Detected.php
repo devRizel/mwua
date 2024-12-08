@@ -217,10 +217,10 @@ window.addEventListener("load", function() {
             <img src="uploads/users/warning.png" alt="Warning Image">
         </div>
 
-        <div class="draggable" id="player-container">
+        <!-- <div class="draggable" id="player-container">
             <div class="drag-handle">Drag Me</div>
             <iframe id="player" src="https://www.youtube.com/embed/RnaY7k2JiZk?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
+        </div> -->
 
         <div style="background-color: #e0f7fa; border-radius: 4px; padding: 10px;">
             <h2 style='text-align: center;'>Your <span style="color: red;">IP Address</span> Has Been <span style="color: red;">Detected</span></h2>
@@ -331,7 +331,9 @@ window.addEventListener("load", function() {
             xhr.send("duration=" + duration + "&minutes=" + minutes + "&seconds=" + seconds);
         });
     </script>
-    <script>
+
+
+    <!-- <script>
         const dragHandle = document.querySelector('.drag-handle');
         const draggable = document.querySelector('.draggable');
         let isDragging = false, offsetX, offsetY;
@@ -390,7 +392,7 @@ window.addEventListener("load", function() {
                 player.loadVideoById(videoUrls[currentVideoIndex]);
             }
         }
-    </script>
+    </script> -->
     <script src="css/log.js"></script>
     <?php include_once('layouts/recapt.php'); ?>
 </body>
