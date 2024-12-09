@@ -463,7 +463,7 @@ body {
             
             <div class="d-block d-md-none" style="margin-left: -13px;">
               <h1 class="header-title text-blue ml-3" style="color: #666666; font-size: 20px;">
-                IT DEPARTMENTsss
+                IT DEPARTMENT
               </h1>
             </div>
         </div>
